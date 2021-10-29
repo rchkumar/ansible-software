@@ -1,0 +1,10 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - shell: "find *.txt"
+      args:
+        chdir:  "/home/ansible/"
+      register: out
+    - debug:
+        msg: out
