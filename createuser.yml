@@ -7,3 +7,4 @@
         password: ram1
         group: ansible
         shell: /bin/bash
+        state: absent
