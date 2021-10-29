@@ -5,4 +5,4 @@
     name: ram
   tasks:
     - debug:
-        msg: {{name}}
+        msg: "{{ name }}"
