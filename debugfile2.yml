@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - file:
+        path: /home/ansible/f11{{ansible_date_time.date}}.log
+        state: touch
