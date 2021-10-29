@@ -1,0 +1,10 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - archive:
+        path:
+          - /home/ansible/sample.txt
+          - /home/ansible/content.tx
+        dest:
+          - home/ansible/file.zip
