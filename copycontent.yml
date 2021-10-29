@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - copy:
+        content: "This is Test Content"
+        dest: /home/ansible/content.txt
