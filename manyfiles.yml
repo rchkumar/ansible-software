@@ -8,4 +8,4 @@
       with_items:
         - /home/ansible/page1.txt
         - /home/ansible/page2.txt
-        - /home/ansiuble/page3.txt
+        - /home/ansible/page3.txt
