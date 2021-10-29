@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - file:
+        path: /home/ansible/dir1
+        state: directory
+        mode: '0755'
