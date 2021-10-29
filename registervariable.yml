@@ -4,7 +4,7 @@
   tasks:
     - shell: "find *.txt"
       args:
-        chdir:  "/home/ansible/"
+        chdir:  "/home/ansible"
       register: out
     - debug:
         msg: out
