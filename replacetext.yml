@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - replace:
+         path: /home/ansible/sample.txt
+         regexp: "sample"
+         replace: "DryRun"
