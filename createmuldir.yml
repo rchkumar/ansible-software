@@ -3,7 +3,7 @@
   become: true
   tasks:
     - file:
-        path: {{ item }}
+        path: "{{ item }}"
         state: directory
       with_items:
            - /home/ansible/dr1
