@@ -6,6 +6,5 @@
         path:
           - /home/ansible/sample.txt
           - /home/ansible/content.tx
-        dest:
-          - /home/ansible/file.zip
+        dest: /home/ansible/file.zip
         format: zip
