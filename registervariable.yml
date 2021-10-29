@@ -7,4 +7,4 @@
         chdir:  "/home/ansible"
       register: out
     - debug:
-        msg: out
+        var: out
