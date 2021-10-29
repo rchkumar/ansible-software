@@ -4,8 +4,8 @@
   tasks:
     - file:
         path: {{item}}
-      with_item:
-        state:
+        state: directory
+      with_items:
            - /home/ansible/dr1
            - /home/ansible/dr2
            - /home/ansible/dr3
