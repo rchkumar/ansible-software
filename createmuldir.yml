@@ -4,8 +4,8 @@
   tasks:
     - file:
         path: "{{ item }}"
-        state: touch
+        state: directory
       with_items:
-           - /home/ansible/f1
-           - /home/ansible/f2
-           - /home/ansible/f3
+           - /home/ansible/d1
+           - /home/ansible/d2
+           - /home/ansible/d3

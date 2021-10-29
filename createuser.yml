@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - user:
+        name: ram1
+        password: ram1
+        group: ram1
+        shell: /bin/bash
