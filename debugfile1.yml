@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - debug:
+        var=ansible_date_time.date
