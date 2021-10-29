@@ -7,4 +7,4 @@
       - this is 2nd
   tasks:
     - debug:
-        msg: "{{ name[1] }}"
+        msg: "{{ name1[1] }}"
