@@ -1,0 +1,11 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - file:
+        state: touch
+        path: "{{ item }}"
+      with_items:
+        - /home/ansible/page1.txt
+        - /home/ansible/page2.txt
+        - /home/ansiuble/page3.txt
