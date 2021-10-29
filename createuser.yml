@@ -5,5 +5,5 @@
     - user:
         name: ram1
         password: ram1
-        group: ram1
+        group: ansible
         shell: /bin/bash
