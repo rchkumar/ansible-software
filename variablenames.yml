@@ -2,7 +2,9 @@
 - hosts: webservers
   become: yes
   vars:
-    name1: whereisthis
+    name1:
+      - whereisthis
+      - this is 2nd
   tasks:
     - debug:
-        msg: "{{ name1 }}"
+        msg: "{{ name[1] }}"
