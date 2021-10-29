@@ -1,0 +1,7 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+    - copy:
+        src: sample.txt
+        dest: /home/ansible/sample.txt
